@@ -17,7 +17,7 @@ const SearchBar = (props) => {
 
     const submitSearch = (e) => {
         e.preventDefault();
-        //Stub
+        //PLACEHOLDER
     };
 
     return (

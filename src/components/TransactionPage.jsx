@@ -9,7 +9,7 @@ const TransactionPage = (props) => {
 
     
 
-
+    //helper function to extract array of transactions from the object that 'getEthTransactions' returns
     const postProcess = (raw) => {
         return (raw?.results?.map((res) => {
             return res.attributes
