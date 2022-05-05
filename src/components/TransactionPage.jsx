@@ -10,8 +10,16 @@ const TransactionPage = (props) => {
 
 
     //PLACEHOLDER: call the 'getEthTransactions' cloud function
+    const { fetch, data, error, isLoading, isFetching} = useMoralisCloudFunction("getEthTransactions", {address: watchAddress});
+
 
     //PLACEHOLDER: setup subscription to track sync status of current address
+    const { data: isSyncing, isLoading: isSyncLoading } = useMoralisQuery("_AddressSyncStatus", query=> 
+    query
+    .equalTo("address", watchAddress.toLowerCase()), [watchAddress], {
+        live: true 
+        },
+    )
 
     //PLACEHOLDER: refetch data when data is synced
 
@@ -34,7 +42,7 @@ const TransactionPage = (props) => {
     return (
         <div>
             <SearchBar setAddress={/*Placeholder*/() => {}}/>
-            <TransactionTable loading={/*Placeholder*/true} transactions={postProcess([]/*Placeholder*/)}/>
+            <TransactionTable loading={isLoading} transactions={postProcess([]/*Placeholder*/)}/>
         </div>
     )  
 };
