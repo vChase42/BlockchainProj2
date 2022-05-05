@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import { useMoralis, useMoralisCloudFunction } from "react-moralis";
 
@@ -29,7 +29,7 @@ function App() {
     // const address = request.params.address.toLowerCase();
     // const usedoSomething = async () => {
     
-      const { fetch, data, error, isLoading, isFetching} = useMoralisCloudFunction("getEthTransactions", {address: account} );
+      // const { fetch, data, error, isLoading, isFetching} = useMoralisCloudFunction("getEthTransactions", {address: account} );
     // console.log(user);
 
     

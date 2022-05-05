@@ -1,0 +1,7 @@
+Server URL: https://yqvjty5xi0tb.usemoralis.com:2053/server
+Application ID: qIhHVjQtgNaQxSwGy8hnySaMUf4mI7BH99IwEPec
+
+
+Command for syncing:
+moralis-admin-cli watch-cloud-folder --moralisApiKey G8YbRUxTFhDdOXj --moralisApiSecret htWM99054aWklTy --moralisSubdomain yqvjty5xi0tb.usemoralis.com --autoSave 1 --moralisCloudfolder src/cloudFunctions
+
